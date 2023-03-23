@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sorteio de Órgãos</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="headerColor grid">
+      <img src="assets/images/SIDAGRO-OFF.png" alt="" />
+    </header>
+    <div class="container mt-5">
+      <h1 class="text-center mb-5 display-4 font-weight-bold">
+        Sistema de Sorteio
+      </h1>
+      <div class="row">
+        <div id="orgaoCad" class="col-md-6">
+          <form id="orgaos-form">
+            <div class="form-group">
+              <h5 for="nome" class="card-title font-weight-bold">
+                Nome do Órgão:
+              </h5>
+              <input type="text" class="form-control" id="nome" required />
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">
+              Cadastrar
+            </button>
+          </form>
+          <ul id="orgaos-list" class="list-group mt-3"></ul>
+        </div>
+        <div id="result" class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Resultado do Sorteio</h5>
+              <div id="resultado"></div>
+              <button id="sortear-btn" class="btn btn-primary mt-3">
+                Sortear
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="newSort grid">
+          <button id="nova-votacao-btn" class="btn btn-secondary mt-3">
+            Nova Votação
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footerBg grid">
+        <img src="assets/images/PREFCG-OFF.png" alt="" />
+        <p class="footerCopy">&lt;CAPY<span>CODE</span>&frasl;&gt;. 2023</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
